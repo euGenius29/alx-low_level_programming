@@ -1,8 +1,7 @@
 #include <stdio.h>
 
 /**
- * Description: This program prints 'with propergrammar...'
- *@printf - ptints on the stdout returning 0 to the variable called
+ * main - Entry point
  *
  * Return: Always 0
  */
