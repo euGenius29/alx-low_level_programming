@@ -1,0 +1,1 @@
+#define PUT "_putchar"
