@@ -15,11 +15,11 @@ Compares two strings
 Task 4: 4-rev_array
 Reverses the content of an array of integers
 
-Task 5: string_toupper
+Task 5: 6-string_toupper
 Changes all lower case letters to uppercase
 
-Task 6: cap_string
+Task 6: 7-cap_string
 Capitalizes all words of a string
 
-Task 7: leet
+Task 7: 8-leet
 Encodes a string to 1337.
