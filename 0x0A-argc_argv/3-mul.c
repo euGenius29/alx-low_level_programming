@@ -5,11 +5,11 @@ int _atoi(char *s);
 /**
  * main - returns multiplication of two variables from argv
  *
- * argc - ensure only two arguments are passed
- * argv - stores variables for multiplication
- * return: 0
+ * @argc: ensure only two arguments are passed
+ * @argv: stores variables for multiplication
+ * Return: Always 0
  */
-int main (int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	if (argc == 3)
 	{
@@ -41,13 +41,13 @@ int _atoi(char *s)
 	sign = 1;
 	i = 0;
 	res = 0;
-	while (!(s[i] <= '9' && s[i] >= '0')&& s[i] != '\0')
+	while (!(s[i] <= '9' && s[i] >= '0') && s[i] != '\0')
 	{
 		if (s[i] == '-')
 			sign *= -1;
 		i++;
 	}
-	while(s[i] <= '9' && (s[i] >= '0' && s[i] != '\0'))
+	while (s[i] <= '9' && (s[i] >= '0' && s[i] != '\0'))
 	{
 		res = (res * 10) + (s[i] - '0');
 		i++;
