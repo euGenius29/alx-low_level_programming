@@ -33,8 +33,16 @@ int main(int argc, char *argv[])
 				int j;
 
 				j = _atoi(argv[i]);
-				res += j;
-				i++;
+				if (j == -1)
+				{
+					printf("Error\n");
+					return (1);
+				}
+				else
+				{
+					res += j;
+					i++;
+				}
 			}
 		}
 		printf("%d\n", res);
@@ -62,10 +70,15 @@ int _atoi(char *s)
 			sign *= -1;
 		i++;
 	}
-	while (s[i] <= '9' && (s[i] >= '0' && s[i] != '\0'))
+	while (s[i] != '\0')
 	{
-		res = (res * 10) + (s[i] - '0');
-		i++;
+		if (s[i] <= '9' && s[i] >= '0')
+		{
+			res = (res * 10) + (s[i] - '0');
+			i++;
+		}
+		else
+			return (-1);
 	}
 	res *= sign;
 	return (res);
