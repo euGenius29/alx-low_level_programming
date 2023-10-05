@@ -9,6 +9,7 @@
 char **strtow(char *str)
 {
 	int i, count, in_word;
+	char **words;
 
 	in_word = 0;
 	if (str == NULL || *str == '\0')
@@ -17,8 +18,8 @@ char **strtow(char *str)
 	while (*str != '\0')
 		i++;
 
-	char **words = (char **)malloc(sizeof(char) * i + 1);
-	if (words == null)
+	words = (char **)malloc(sizeof(char) * i + 1);
+	if (words == NULL)
 		return (NULL);
 	while (*str != '\0')
 	{
