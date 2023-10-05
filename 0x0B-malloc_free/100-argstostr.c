@@ -7,12 +7,11 @@
  */
 char *argstostr(int ac, char **av)
 {
+	int i, j, k, lenght;
 	char *str;
 
 	if (ac == 0 || av == NULL)
 		return (NULL);
-	int i, j, k, lenght;
-
 	j = 0;
 	lenght = 0;
 	k = 0;
