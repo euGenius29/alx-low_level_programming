@@ -13,7 +13,9 @@ char *argstostr(int ac, char **av)
 		return (NULL);
 	int i, j, k, lenght;
 
-	i, j, k, lenght = 0;
+	j = 0;
+	lenght = 0;
+	k = 0;
 
 	for (i = 0; i < ac; i++)
 	{
@@ -30,7 +32,6 @@ char *argstostr(int ac, char **av)
 		return (NULL);
 	for (i = 0; i < ac; i++)
 	{
-		j = 0;
 		while (av[i][j] != '\0')
 		{
 			str[k] = av[i][j];
