@@ -6,9 +6,9 @@
  * @size: size of bytes to allocate
  * Return: ptr to allocated memory or NULL on failure
  */
-void *_calloc(unsigned int nmemb, unsigned int size);
+void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	unsigned int i, j, count;
+	unsigned int i, count;
 	char *ptr;
 
 	if (nmemb == 0 || size == 0)
