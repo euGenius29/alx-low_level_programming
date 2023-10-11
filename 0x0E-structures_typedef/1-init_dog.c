@@ -2,7 +2,7 @@
 
 /**
  * init_dog - initializes the structure dog
- * @d - pointer to the structure
+ * @d: pointer to the structure
  * @name: name to initialize
  * @age: sge to initialize
  * @owner: owner name for initialization
