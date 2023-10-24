@@ -14,7 +14,7 @@ listint_t *add_nodeint(listint_t **head, const int n)
 	if (!NewNode)
 	{
 		printf("Memory allocation failed\n");
-		return(NULL);
+		return (NULL);
 	}
 	NewNode->n = n;
 	NewNode->next = *head;

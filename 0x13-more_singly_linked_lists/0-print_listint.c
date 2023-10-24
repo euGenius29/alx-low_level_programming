@@ -11,7 +11,7 @@
 size_t print_listint(const listint_t *t)
 {
 	size_t count;
-	
+
 	if (!t)
 		return (0);
 	count = 0;
