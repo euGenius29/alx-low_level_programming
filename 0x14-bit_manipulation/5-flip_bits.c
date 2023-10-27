@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * flip_bits - determines the number of bits needed to be flipped to get new num
+ * flip_bits - determines the number of bits to be flipped to get new num
  *
  * @n:actual number
  * @m: target number
@@ -15,7 +15,7 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 	while (xor > 0)
 	{
 		if (xor & 1)
-			count ++;
+			count++;
 	xor >>= 1;
 	}
 	return (count);
