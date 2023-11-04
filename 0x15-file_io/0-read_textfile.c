@@ -1,4 +1,12 @@
 #include "main.h"
+/**
+ * read_textfile - reads a file.
+ *
+ * @filename: name of file
+ * @letters: number of letters to read
+ *
+ * Return: number of bytes actually writtten.
+ */
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
@@ -7,7 +15,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	ssize_t bytes_read, bytes_written;
 
 	if (!filename)
-		return 0;
+		return (0);
 
 	filestore = open(filename, O_RDONLY);
 	if (filestore == -1)
