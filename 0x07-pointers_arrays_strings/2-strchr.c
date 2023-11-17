@@ -12,9 +12,9 @@ char *_strchr(char *s, char c)
 	i = strlen(s) + 1;
 	while (i)
 	{
-		if (s[i] == c)
+		if (s[i] == c && c != '\0')
 			return (&s[i]);
-		if (s[i] =='\0')
+		if (s[i] == c)
 			return ("");
 		i++;
 	}
