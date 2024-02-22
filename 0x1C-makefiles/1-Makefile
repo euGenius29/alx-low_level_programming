@@ -4,6 +4,6 @@ SRC = main.c school.c
 # set the compiler
 CC = gcc
 
-compile to create executable
+#compile to create executable
 all:
 	${CC} ${SRC} -o school
