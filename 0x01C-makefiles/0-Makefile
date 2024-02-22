@@ -1,0 +1,6 @@
+#Run school
+all: school
+
+#compile source files
+school:
+	gcc main.c school.c -o school
